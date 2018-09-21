@@ -1,0 +1,17 @@
+<h3>Shirts</h3>
+<ul id='list'>
+    <li>Biker Jacket</li>
+    <li>Mens Shirt</li>
+</ul>
+
+
+
+
+
+var shirts = document.getElementById("list");
+let items = document.querySelectorAll("li");
+for (var i = 0; i < items.length; i++) {
+   items[i].addEventListener("click", function() {
+       console.log(this.innerText);
+   });
+}
